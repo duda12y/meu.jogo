@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>A corrida de Carros</title>
+    <!-- Lib -->
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+    <script src="sweetalert.min.js"></script>
+
+    <link  rel="stylesheet" href="sweetalert.css"/>
+    <!--REFERENCIA A BIBLIOTECA DO FIREBASE -->
+    <script src="https://www.gstatic.com/firebasejs/6.3.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.0/firebase-database.js"></script>
+
+  
+    <link rel="stylesheet" href="style.css" />
+
+ 
+  </head>
+  <body>
+    <script>
+    const firebaseConfig = {
+
+apiKey: "AIzaSyCMj9KBaWd3NsEKrkv25ItF1qaP_AfpA3o",
+
+authDomain: "corrida-de-carros-b6592.firebaseapp.com",
+
+databaseURL: "https://corrida-de-carros-b6592-default-rtdb.firebaseio.com",
+
+projectId: "corrida-de-carros-b6592",
+
+storageBucket: "corrida-de-carros-b6592.appspot.com",
+
+messagingSenderId: "775374723529",
+
+appId: "1:775374723529:web:ddb74a0acd81c2812ff018"
+
+};
+
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+    </script>
+    
+    <script src="form.js"></script>
+    <script src="player.js"></script>
+    <script src="game.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>
